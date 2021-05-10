@@ -325,7 +325,7 @@ button i:hover {
   background-color: var(--green1);
 }
 .card .card-body h3 {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 .card .card-body img {
   position: relative;
@@ -336,9 +336,21 @@ button i:hover {
   position: relative;
   padding: 1px;
 }
-
+.card .card-body h3,
+.card .card-body p {
+  overflow: hidden;
+  padding: 1rem;
+  margin-bottom: 0rem;
+  background-color: var(--green2);
+}
 .card-body {
   padding: 0px;
   background-color: var(--green2);
   color: #ffffff;
+  box-shadow: 0 0 2rem rgb(0 0 0 / 40%);
+  transition: ease-in-out 0.4s;
+}
+.card-body:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 2rem rgb(0 0 0 / 40%);
 }
