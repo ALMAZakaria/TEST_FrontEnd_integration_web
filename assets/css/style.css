@@ -257,7 +257,7 @@ footer .container a:hover {
   transform: translateY(-50%);
   font-size: 0.9em;
 }
-/*----Form Color---*/
+/*--------------------------Form Color----------------*/
 .btn,
 .form-control {
   background-color: transparent;
@@ -277,4 +277,68 @@ button i {
 button i:focus,
 button i:hover {
   color: var(--green1);
+}
+/*-------------------Sizing and Placement-----------------*/
+.our-services .carousel-inner {
+  margin: 2rem 0;
+}
+/*----------For No repeate only 3 pack*/
+.our-services .row {
+  flex-wrap: nowrap;
+}
+.our-services h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 1rem 0;
+}
+
+.our-services .carousel-inner .img-box img {
+  width: auto;
+  padding: 1rem;
+  background-image: url(/assets/img/Forme3.png);
+  background-repeat: no-repeat;
+}
+.our-services .carousel-control-next-icon {
+  color: var(--green1);
+}
+.our-services .carousel a {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 3rem;
+  width: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*----------------Card--------------è-*/
+.card-columns {
+  padding: 3rem 0;
+}
+.card .card-body {
+  position: relative;
+}
+.card .card-body h6 {
+  z-index: 211111;
+  position: absolute;
+  padding: 0.3rem 0;
+  top: 0;
+  left: 0;
+  background-color: var(--green1);
+}
+.card .card-body h3 {
+  padding-top: 2rem;
+}
+.card .card-body img {
+  position: relative;
+  padding: 0px;
+  background-size: cover;
+}
+.card .card-body p {
+  position: relative;
+  padding: 1px;
+}
+
+.card-body {
+  padding: 0px;
+  background-color: var(--green2);
+  color: #ffffff;
 }
