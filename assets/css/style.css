@@ -1,22 +1,12 @@
 :root {
   --oran1: #fbba00;
   --oran2: #ffcc00;
-  --green1: #274c46;
-  --green2: #aebb21;
+  --green1: #23443f;
+  --green2: #274c46;
+  --green3: #aebb21;
   --blue1: #00446a;
 }
-body {
-  box-sizing: border-box;
-  top: 0 !important;
-  bottom: 0 !important;
-  margin: 0;
-  padding: 0;
-  font-family: FuturaNowHeadline;
-}
-p {
-  font-size: 1.08em;
-  line-height: 2rem;
-}
+
 @font-face {
   font-family: RobotoBold;
   src: url(../fonts/Roboto-Bold.ttf);
@@ -37,4 +27,254 @@ p {
   font-family: FutureTitle;
   src: url(../fonts/FuturaNowHeadlineMedium.ttf);
   font-size: 3.4375em;
+}
+@media (min-width: 1208px) {
+  header {
+    height: 4.2rem;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  top: 0 !important;
+  bottom: 0 !important;
+  margin: 0;
+  padding: 0;
+  font-family: FuturaNowHeadline;
+}
+/*----------------------Header background Color + Shadow in the bottom----------------------*/
+header {
+  background-color: var(--green2);
+  box-shadow: 0rem 10px 10px rgba(0 0 0 / 40%);
+}
+/*----------------------Navbar SetUp sizing----------------------*/
+.navbar {
+  padding: 0rem 1rem;
+  text-transform: uppercase;
+  font-family: RobotoMedium;
+  font-size: 0.9rem;
+  background-color: var(--green2);
+}
+@media (min-width: 1208px) {
+  .navbar {
+    height: 4.2rem;
+  }
+}
+@media (max-width: 425px) {
+  #meanlogo {
+    height: 4.5rem;
+  }
+}
+.navbar-collapse {
+  max-width: 100%;
+}
+/*----------------------Menu Background Color----------------------*/
+.bg-white {
+  background-color: var(--green2) !important;
+}
+/*----------------------Menu Elements's Color----------------------*/
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+/*----------------------Menu active Elements's Color----------------------*/
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--oran1);
+}
+/*----------------------Menu Icon Color's Change---> Search for  " stroke='rgba(256, 186, 0, 1) "----------------------*/
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256, 186, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+/*--------------Dropdown Menu SetUp Positioning dispkTOP then Phone/tablet-------------*/
+li .dropdown-menu {
+  margin-top: 0px;
+  border-radius: 0 0 0.25rem 0.25rem;
+  border: 0;
+  background-color: var(--green2) !important;
+}
+@media (max-width: 1208px) {
+  .dropdown-menu {
+    border: 0px;
+  }
+}
+/*----------------------Coloring Dopdown menue Elements----------------------*/
+li .dropdown-menu a {
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+}
+
+/*----------------------Social icons Colore / when it active----------------------------*/
+li .SocialIcon {
+  background-color: var(--oran1);
+}
+li .SocialIcon a i:focus,
+li .SocialIcon a i:hover {
+  color: #ffffff;
+}
+/*----------------------Social icons Size And Coloring + Responsivity----------------------------*/
+li .SocialIcon a i {
+  font-size: 1.7rem;
+  padding-left: 0.2rem;
+  color: var(--green2);
+}
+/*----------------------Responsivity and Placement----------------------------*/
+@media (min-width: 1208px) {
+  .navbar-collapse {
+    line-height: 3rem;
+  }
+  .SocialIcon .nav-link {
+    height: 4.2rem;
+    line-height: 3rem;
+  }
+  .nav-item .SocialIcon {
+    margin-left: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 0rem !important;
+  }
+}
+/*----------------------Responsivity Of Social Icons Cackground Color----------------------------*/
+@media (max-width: 1208px) {
+  li .SocialIcon {
+    width: 100vw;
+    padding-bottom: 0rem;
+  }
+}
+/*.carousel {
+  box-shadow: 0 0 2rem rgb(0 0 0 / 40%);
+}*/
+
+#headslide:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to top, var(--green2), transparent);
+  z-index: 10;
+}
+/*---------------Carousel icon's Controller Cize----------------*/
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 1.6em;
+  height: 1.6em;
+}
+/*---------------Carousel icon's Controller Padding Size + Placement /Center It----------------*/
+.carousel a {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 6rem;
+  width: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*------  place the carousel controler distance from border-------*/
+.carousel-control-next {
+  right: 1rem;
+}
+.carousel-control-prev {
+  left: 1rem;
+}
+
+/*--------------- SubTitle Background And Text Color-----------------*/
+.sub-title {
+  background-color: var(--green2);
+  color: #ffffff;
+}
+/*-----------SetUp The height Of the Pharagraphe-----------*/
+.sub-title .row {
+  position: relative;
+  height: 12.5rem;
+}
+/*---------Centering The Text------*/
+.sub-title .row h5 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*---------Colored Line In The Bottom------*/
+.SubCarousel {
+  border-bottom: 0.25rem solid var(--oran1);
+}
+
+/*-----------Footer-------------*/
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: var(--green2);
+}
+footer div .ftr {
+  margin-top: 1.2rem;
+}
+footer .container h7 {
+  font-family: FutureTitle;
+  font-weight: 550;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+footer .container a {
+  text-decoration: none;
+  font-family: FuturaNowHeadline;
+  color: rgba(255, 255, 255, 0.6);
+}
+footer .container a:focus,
+footer .container a:hover {
+  color: var(--oran1);
+}
+/*-------------- Bottom --------------*/
+.bottom {
+  background-color: var(--green1);
+  box-sizing: border-box;
+}
+/*-------------- Bottom Placement SetUp--------------*/
+.bottom #btm {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.bottom p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: FuturaNowHeadline;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9em;
+}
+.bottom form p {
+  color: rgb(255, 255, 255);
+  font-family: FuturaNowHeadline;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9em;
+}
+/*----Form Color---*/
+.btn,
+.form-control {
+  background-color: transparent;
+}
+.btn {
+  background-color: transparent;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.btn:focus,
+.btn:hover {
+  background-color: #ffffff;
+}
+button i {
+  color: #c4c4c4;
+}
+button i:focus,
+button i:hover {
+  color: var(--green1);
 }

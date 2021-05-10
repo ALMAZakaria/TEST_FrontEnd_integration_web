@@ -23,40 +23,33 @@
 	<![endif]-->
   
   <title>Test-fornt-end</title>
- <!--  <style>
+<style>
         /* Make the image fully responsive */
-		.carousel-inner img {
+
+  .carousel-inner {
+    width: 100%;
+    max-height: 80vh;
+  }   
+  .carousel-inner img {
     width: 100%;
     height: 100%;
   }   
-        </style>--> 
+        </style>
 <!--Link to mùy own style-->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script>
-      $(document).ready(function(){
-          $(".dropdown").hover(function(){
-              var dropdownMenu = $(this).children(".dropdown-menu");
-              if(dropdownMenu.is(":visible")){
-                  dropdownMenu.parent().toggleClass("open");
-              }
-          });
-      });     
-    </script>
 
     <style type="text/css">
     .dropdown:hover .dropdown-menu{
         display: block;
     }
     .dropdown-menu{
-        margin-top: 0;
+        margin-top: 0!important;
     }
     </style>
 
 <style type="text/css">
 	@media all and (min-width: 992px) {
 		.navbar{ padding-top: 0; padding-bottom: 0; }
-		.navbar .has-megamenu{position:static!important;}
-		.navbar .megamenu{left:0; right:0; width:100%; padding:20px;  }
 		.navbar .nav-link{ padding-top:1rem; padding-bottom:0.8rem;  }
 	}
 </style>
@@ -67,35 +60,189 @@
     ================================================================================================  -->
     <header class="site-header" role="banner" id="myPage">
         <!--Menu-->
+        <div class="container" style="max-width: 100%;padding: 0;">
+            <div class="row justify-content-center" style="max-width: 100%;padding: 0;">
+                <div class="col-lg-11">
+                    <nav class="smart-scroll">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        
+                        <a class="navbar-brand ml-4" href="index.html"><img class="logo" src="assets/img/logo2.png" id="meanlogo"></img></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> 
+        
+                        <div class="collapse navbar-collapse" id="main_nav">
+                            <ul class="navbar-nav ml-auto mr-5 ">
+                            <!--<li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>--> 
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" >Acceuil</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" >Nos Activités</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Emplacement</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contactez-Nous</a>
+                                        <div class="dropdown-menu " role="menu">
+                                                        <div class="col">
+                                                            <div class="ml-3">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="nav-link" href="#">Careers</a></li>
+                                                                    <li><a class="nav-link" href="#">Interships</a></li>
+                                                                    <li><a class="nav-link" href="#">Consultants</a></li>
+                                                                </ul>
+                                                            </div>  <!-- col-megamenu.// -->
+                                                        </div><!-- end col-3 -->                    
+                                                    
+                                        </div>
+                                </li>
+
+                                    <li class="nav-item ">
+                                        <div class="row justify-content-around SocialIcon" >
+                                            
+                                            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a  class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                                            <a  class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            
+                        </div>            
+                    </nav>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>  
       <!--End Menu-->
       <!-- HEADSIDE CAROUSEL
       ================================================================================================  -->
-    <section class="carousel slide"  id="headslide" >
- 
-    </section>
+<section class="carousel slide"  id="headslide" >
+    <div  data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/slide1.jpg" alt="Photo1" width="1100" height="500">                
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/slide2.jpg" alt="Photo2" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/slide3.jpg" alt="Photo3" width="1100" height="500">
+                </div>
+           </div>
+          <a class="carousel-control-prev icostyle" href="#headslide" data-slide="prev">
+               <span class="carousel-control-prev-icon"> </span>
+          </a>
+          <a class="carousel-control-next icostyle" href="#headslide" data-slide="next">
+               <span class="carousel-control-next-icon"></span>
+          </a>
+    </div>
+  </section>
         <!--HEADSIDE CAROUSEL-->
       <!-- SUBTITLE
       ================================================================================================  -->
       <section class="sub-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-11 text-center SubCarousel">
+                    <h5>
+                        Ceci eszt simulation du sous titre sur deux lignes, Ceci est une <br>
+                        simulation du sous titre sur deux lignes
+                    </h5>
+                </div>
+            </div> 
+        </div>
       </section>
       <!--End SubTitle-->
                 <!-- OPT IN SECTION
     ================================================================================================  -->
     <section class="what-we-do">
+
     </section>
         <!--End WhatWeDo-->
 
              <!-- FOOTER CONTACT
     ================================================================================================  -->
-    <footer>   
+    <footer >
+        <div class="container">
+            <div class="row ">
+                    <div class="col-lg-12 ftr">
+                        <div class="row justify-content-between ml-2">
+                            <div class="col-lg-2 col-md-4 col-sm-6 ">
+                                <h7>Qui Sommes-Nous</h7>
+                                        <ul class="list-unstyled ml-1">
+                                            <li><a href="#">Présentation</a></li>
+                                            <li><a href="#">Mission & valeur</a></li>
+                                            <li><a href="#">Gouvernance & organisation</a></li>
+                                            <li><a href="#">Resources Humaines</a></li>
+                                            <li><a href="#">Publication</a></li>
+                                        </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <h7>Nos Project</h7>
+                                        <ul class="list-unstyled ml-1">
+                                            <li><a href="#">Carte interactive</a></li>
+                                        </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <h7>Nos Métiers</h7>
+                                        <ul class="list-unstyled ml-1">
+                                            <li><a href="#">Métiers & experises</a></li>
+                                            <li><a href="#">Modèle intégré</a></li>
+                                        </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <h7>Presse</h7>
+                                        <ul class="list-unstyled ml-1">
+                                            <li><a href="#">Communiqués de presse</a></li>
+                                            <li><a href="#">Dossiers de presse</a></li>
+                                            <li><a href="#">Revues de presse</a></li>
+                                        </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-4 ">
+                                <h7>Contactez-Nous</h7>
+                                        <ul class="list-unstyled ml-1">
+                                            <li><a href="#">Demande de sponsoring</a></li>
+                                            <li><a href="#">Demande de visiste de sites</a></li>
+                                            <li><a href="#">Contact presse</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#">Recrutement</a></li>
+                                        </ul>
+                            </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
     </footer>
           <!--End Footer-->
              <!-- Bottom
     ================================================================================================  -->
-          <div class="container-fluid" id="btm">
-          </div>
-
+    <section class="bottom">      
+        <div class="container" id="btm">
+            <div class="row justify-content-center"> 
+                <div class="col-lg-11 "> 
+                    <div class="row justify-content-center">          
+                        <div class="col-xs mr-auto">
+                            <p>©2016, NZ Transport tout droit résérvé</p>
+                        </div>
+                        <form class="form-inline sm-4 my-2 my-lg-0">
+                            <p class="col-xs mr-4">S'inscrire à la newsletter</p>
+                            <input class="form-control mr-sm-0" type="text" placeholder="Votre E-mail ici">
+                            <button href="#" class="btn my-5 my-sm-0 ml-2" type="button"><i class="fas fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- BOOTSTRAP CORE JAVASCRIPT
           Places at the end od the document so the pages
           load faster  
