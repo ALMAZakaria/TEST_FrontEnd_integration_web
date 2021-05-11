@@ -58,6 +58,7 @@ header {
   font-family: RobotoMedium;
   font-size: 0.9rem;
   background-color: var(--green2);
+  z-index: 1111;
 }
 
 @media (min-width: 1208px) {
@@ -74,7 +75,7 @@ header {
     height: 4.5rem;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 353px) {
   #meanlogo {
     height: 3rem;
   }
@@ -105,6 +106,58 @@ header {
 .navbar-toggler-icon {
   height: 1.95em;
   width: 1.95em;
+}
+/*----------------SetUP to hide menu on scrolling-----------------*/
+.smart-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+/*----------------SetUP to hide menu on scrolling-----------------*/
+
+#site-wrapper {
+  padding-top: 66px;
+  background: #fff;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+@media (min-width: 425px) and (max-width: 1207px) {
+  #site-wrapper {
+    padding-top: 82px;
+  }
+}
+@media (min-width: 353px) and (max-width: 425px) {
+  #site-wrapper {
+    padding-top: 82px;
+  }
+}
+@media (max-width: 353px) {
+  #site-wrapper {
+    padding-top: 58px;
+  }
+}
+.smart-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  border-bottom: 0.25rem solid var(--green1);
+}
+.smart-scroll {
+  position: fixed;
+  z-index: 1030;
+}
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }
 /*--------------Dropdown Menu SetUp Positioning dispkTOP then Phone/tablet-------------*/
 li .dropdown-menu {
@@ -160,6 +213,11 @@ li .SocialIcon a i {
 }
 /*----------------------Responsivity Of Social Icons Cackground Color----------------------------*/
 @media (max-width: 1208px) {
+  li .SocialIcon {
+    width: 100vw;
+  }
+}
+@media (min-width: 982px) and (max-width: 1208px) {
   li .SocialIcon {
     width: 100vw;
     padding-bottom: 0.7rem !important;
@@ -327,11 +385,22 @@ button i:hover {
 .card-columns {
   padding: 3rem 0;
 }
+/*-----------------Make Card responsive---------------*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+}
 .card .card-body {
   position: relative;
 }
 .card .card-body h6 {
-  z-index: 211111;
+  z-index: 110;
   position: absolute;
   padding: 0.3rem 0;
   top: 0;
