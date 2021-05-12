@@ -3910,7 +3910,7 @@ tbody.collapse.show {
     padding-left: 0;
   }
 }
-@media (min-width: 1208px) {
+@media (min-width: 1241px) {
   .navbar-expand-lg {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
