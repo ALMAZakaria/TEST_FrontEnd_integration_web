@@ -28,7 +28,7 @@
   src: url(../fonts/FuturaNowHeadlineMedium.ttf);
   font-size: 3.4375em;
 }
-@media (min-width: 1208px) {
+@media (min-width: 1241px) {
   header {
     height: 4.2rem;
   }
@@ -61,7 +61,7 @@ header {
   z-index: 1111;
 }
 
-@media (min-width: 1208px) {
+@media (min-width: 1241px) {
   .navbar {
     height: 4.2rem;
   }
@@ -124,7 +124,7 @@ header {
   margin: 0 auto;
   position: relative;
 }
-@media (min-width: 425px) and (max-width: 1207px) {
+@media (min-width: 425px) and (max-width: 1241px) {
   #site-wrapper {
     padding-top: 82px;
   }
@@ -166,7 +166,7 @@ li .dropdown-menu {
   border: 0;
   background-color: var(--green2) !important;
 }
-@media (max-width: 1208px) {
+@media (max-width: 1241px) {
   .dropdown-menu {
     border: 0px;
   }
@@ -193,7 +193,7 @@ li .SocialIcon a i {
   color: var(--green2);
 }
 /*----------------------Responsivity and Placement----------------------------*/
-@media (min-width: 1208px) {
+@media (min-width: 1241px) {
   .navbar-collapse {
     line-height: 3rem;
   }
@@ -212,12 +212,12 @@ li .SocialIcon a i {
   }
 }
 /*----------------------Responsivity Of Social Icons Cackground Color----------------------------*/
-@media (max-width: 1208px) {
+@media (max-width: 1241px) {
   li .SocialIcon {
     width: 100vw;
   }
 }
-@media (min-width: 982px) and (max-width: 1208px) {
+@media (min-width: 982px) and (max-width: 1241px) {
   li .SocialIcon {
     width: 100vw;
     padding-bottom: 0.7rem !important;
@@ -279,6 +279,88 @@ li .SocialIcon a i {
   border-bottom: 0.25rem solid var(--oran1);
 }
 
+/*-------------------Sizing and Placement-----------------*/
+.our-services .carousel-inner {
+  margin: 2rem 0;
+}
+/*----------For No repeate only 3 pack
+.our-services .row {
+  flex-nowrap: nowrap;
+  flex-md-wrap-revers:;
+}*/
+.our-services h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 1rem 0;
+}
+.carousel-inner .img-box img {
+  width: auto;
+  padding: 1rem;
+  background-image: url(/assets/img/Forme3.png);
+  background-repeat: no-repeat;
+}
+.our-services .carousel a {
+  color: var(--green1);
+  background-color: transparent;
+  font-size: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*----------------Card--------------è-*/
+.card-columns {
+  padding: 3rem 0;
+}
+/*-----------------Make Card responsive---------------*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+}
+.card {
+  transition: ease-in-out 0.4s;
+}
+.card:hover {
+  transform: translateZ(-0.5rem);
+  box-shadow: 0 0 2rem rgb(0 0 0 / 40%);
+}
+.card-body {
+  padding: 0px;
+  background-color: var(--green2);
+  color: #ffffff;
+  box-shadow: 0 0 2rem rgb(0 0 0 / 40%);
+}
+.card .card-body {
+  position: relative;
+}
+.card .card-body img {
+  position: relative;
+  padding: 0px;
+  background-size: cover;
+}
+.card .card-body h6 {
+  z-index: 110;
+  position: absolute;
+  padding: 0.4rem 0.6rem;
+  top: 0;
+  left: 0;
+  background-color: var(--green1);
+}
+.card .card-body h3,
+.card .card-body p {
+  overflow: hidden;
+  padding: 1rem;
+  margin-bottom: 0rem;
+  background-color: var(--green2);
+}
+.card .card-body p {
+  position: relative;
+}
 /*-----------Footer-------------*/
 footer {
   margin: 0;
@@ -352,93 +434,4 @@ button i {
 button i:focus,
 button i:hover {
   color: var(--green1);
-}
-/*-------------------Sizing and Placement-----------------*/
-.our-services .carousel-inner {
-  margin: 2rem 0;
-}
-/*----------For No repeate only 3 pack*/
-.our-services .row {
-  flex-wrap: nowrap;
-}
-.our-services h4 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.2em;
-  padding: 1rem 0;
-}
-
-.our-services .carousel-inner .img-box img {
-  width: auto;
-  padding: 1rem;
-  background-image: url(/assets/img/Forme3.png);
-  background-repeat: no-repeat;
-}
-.our-services .carousel a {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 3rem;
-  width: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-/*----------------Card--------------è-*/
-.card-columns {
-  padding: 3rem 0;
-}
-/*-----------------Make Card responsive---------------*/
-@media (min-width: 576px) and (max-width: 768px) {
-  .card-columns {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
-    column-gap: 1.25rem;
-  }
-}
-.card .card-body {
-  position: relative;
-}
-.card .card-body h6 {
-  z-index: 110;
-  position: absolute;
-  padding: 0.3rem 0;
-  top: 0;
-  left: 0;
-  background-color: var(--green1);
-}
-.card .card-body h3 {
-  padding-top: 1rem;
-}
-.card .card-body img {
-  position: relative;
-  padding: 0px;
-  background-size: cover;
-}
-.card .card-body p {
-  position: relative;
-  padding: 1px;
-}
-.card .card-body h3,
-.card .card-body p {
-  overflow: hidden;
-  padding: 1rem;
-  margin-bottom: 0rem;
-  background-color: var(--green2);
-}
-.card .card-body h6 {
-  padding: 0.4rem 0.6rem;
-}
-.card-body {
-  padding: 0px;
-  background-color: var(--green2);
-  color: #ffffff;
-  box-shadow: 0 0 2rem rgb(0 0 0 / 40%);
-}
-.card {
-  transition: ease-in-out 0.4s;
-}
-.card:hover {
-  transform: translateY(-0.5rem);
-  box-shadow: 0 0 2rem rgb(0 0 0 / 40%);
 }
